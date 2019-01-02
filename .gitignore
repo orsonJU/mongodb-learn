@@ -23,6 +23,7 @@
 /dist/
 /nbdist/
 /.nb-gradle/
+
 # Compiled class file
 *.class
 

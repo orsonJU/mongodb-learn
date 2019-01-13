@@ -1,0 +1,51 @@
+package org.orson.app.pojo;
+
+import org.bson.types.ObjectId;
+
+public class Person {
+
+    private ObjectId id;
+    private String name;
+    private String password;
+
+    public Person() {
+    }
+
+    public Person(String name, String password) {
+        this.name = name;
+        this.password = password;
+    }
+
+    public ObjectId getId() {
+        return id;
+    }
+
+    public void setId(ObjectId id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", password='" + password + '\'' +
+                '}';
+    }
+}
